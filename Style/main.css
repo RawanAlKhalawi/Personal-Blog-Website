@@ -1,0 +1,83 @@
+@import "footer.css";
+@import "header.css";
+@import "blog-post.css";
+
+article {
+  padding: 10%;
+}
+
+body {
+  margin: 0%;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 15px;
+  grid-template-areas:
+    "hd hd"
+    "post1 post2"
+    "post3 post4"
+    "ft ft";
+}
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  min-height: 160px;
+  border: 2px solid rgb(126, 233, 210);
+}
+
+#post1 {
+  grid-area: post1;
+  background-image: url("../img/img.png");
+  background-position: top;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+#post2 {
+  grid-area: post2;
+  background-image: url("../img/img.png");
+  background-position: top;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+#post3 {
+  grid-area: post3;
+  background-image: url("../img/img.png");
+  background-position: top;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+#post4 {
+  grid-area: post4;
+  background-image: url("../img/img.png");
+  background-position: top;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 460px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    grid-template-areas:
+      "hd"
+      "post1"
+      "post2"
+      "post3"
+      "post4"
+      "ft";
+  }
+}

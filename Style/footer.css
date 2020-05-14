@@ -1,0 +1,11 @@
+footer {
+  grid-area: ft;
+  height: 40px;
+  color: gray;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.social-sharing a {
+  text-decoration: underline;
+  padding-right: 1.09rem;
+}

@@ -1,0 +1,47 @@
+@import "footer.css";
+@import "header.css";
+
+#containerpost {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 15px;
+  grid-template-areas:
+    "hd"
+    "post1"
+    "post2"
+    "post3"
+    "post4"
+    "ft";
+}
+.postartical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  min-height: 160px;
+}
+
+#artical1 {
+  grid-area: post1;
+}
+#artical2 {
+  grid-area: post2;
+}
+#artical3 {
+  grid-area: post3;
+}
+#artical4 {
+  grid-area: post4;
+}
+
+.img {
+  border-radius: 50%;
+  min-width: 50px;
+  max-width: 50px;
+}
+#blogtitle {
+  padding: 5%;
+  padding-bottom: 0%;
+  font-size: 20px;
+}
